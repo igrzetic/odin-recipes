@@ -1,7 +1,7 @@
 /* HOMEPAGE STYLE */
 
 #homepage {
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
     margin: 0 auto;
     max-width: 600 px;
@@ -16,14 +16,14 @@
 
 .homepage-title {
     font-size: 3em;
-    color: #ffb700;
+    color: #e7b433;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .homepage-a {
     font-size: large;
     text-decoration: none;
-    color: #ff3700;
+    color: #ed4224;
     font-weight: bold;
     display: block;
     max-width: 500px;
@@ -36,7 +36,7 @@
     border-radius: 15px;
     overflow: hidden;
     margin: 10px;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
     box-shadow: 2px 4px 8px 1px rgba(0, 0, 0, 0.6);
     position: relative;
  }
@@ -45,7 +45,7 @@
     width: 500px;
     height: 310px;
     object-fit: cover;
-    border-bottom: 2px solid #ff3700;
+    border-bottom: 2px solid #ed4224;
  }
 
  .image-text {
@@ -53,20 +53,33 @@
     text-align: center;
  }
 
+ .image-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+    border: 3.5px solid #ed4224;
+    border-radius: 10px;
+}
+
  /* LASAGNA PAGE STYLE */
  /* GINGERBREAD MAN STYLE */
  /* JUICY BURGER STYLE */
 
- #lasagna-page,
+ /* BODY */
+#lasagna-page,
 #gingerbread-man-page,
 #burger-page {
     text-align: center;
     margin: 0 auto;
     max-width: 600px;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
     line-height: 1.5;
     margin-bottom: 25px;
+    background-color:  #f4f4f4;
 }
 
 .lasagna-title, 
@@ -75,6 +88,8 @@
     font-size: 3em;
     text-align: left;
     margin-top: -25px;
+    color: #ed4224;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .lasagna-title-h2-h3,
@@ -89,6 +104,7 @@
 .burger-paragraph {
         margin-bottom: 30px;
         text-align: left;
+        color: #777777;
     }
 
 .lasagna-img,
@@ -99,9 +115,12 @@
     margin-right: auto;
     max-width: 600px;
     max-height: 600px;
-    border-radius: 7px;
+    border-radius: 10px;
     margin-top: -15px;
     margin-bottom: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2.5px solid #e7b433;
+    border-radius: 10px;
 }
 
 .lasagna-ul-ol,
@@ -109,11 +128,12 @@
 .burger-ul {
     line-height: 2.5;
     text-align: left;
+    color: #777777;
 }
 
 #home-link {
     font-size: 23px;
-    color: #ff3700;
+    color: #ed4224;
     text-decoration: none;
     margin-top: 15px;
     margin-left: -435px;
