@@ -16,14 +16,14 @@
 
 .homepage-title {
     font-size: 3em;
-    color: #e7b433;
+    color: #e7ab46;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .homepage-a {
     font-size: large;
     text-decoration: none;
-    color: #ed4224;
+    color: #f15024;
     font-weight: bold;
     max-width: 500px;
     border-radius: 15px;
@@ -45,7 +45,7 @@
     width: 500px;
     height: 310px;
     object-fit: cover;
-    border-bottom: 2px solid #ed4224;
+    border-bottom: 2px solid #f15024;
  }
 
  .image-text {
@@ -60,7 +60,7 @@
 
 .image-container:hover {
     transform: scale(1.1);
-    border: 3.5px solid #ed4224;
+    border: 3.5px solid #f15024;
     border-radius: 10px;
 }
 
@@ -100,7 +100,7 @@
     left: 0;
     width: 100%;
     padding: 20px;
-    background: #ed4224;
+    background: #f15024;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -158,7 +158,7 @@
     font-size: 3em;
     text-align: left;
     margin-top: 80px;
-    color: #ed4224;
+    color: #f15024;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -187,7 +187,7 @@
     margin-top: -15px;
     margin-bottom: 35px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border: 3.5px solid #e7b433;
+    border: 3.5px solid #e7ab46;
     border-radius: 10px;
 }
 
