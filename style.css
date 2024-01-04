@@ -146,7 +146,7 @@
 .burger-title {
     font-size: 3em;
     text-align: left;
-    margin-top: 80px;
+    margin-top: 0.5;
     color: #f15024;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
