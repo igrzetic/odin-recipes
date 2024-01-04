@@ -25,7 +25,6 @@
     text-decoration: none;
     color: #ed4224;
     font-weight: bold;
-    display: block;
     max-width: 500px;
     border-radius: 15px;
     overflow: hidden;
@@ -35,7 +34,8 @@
     display: inline-block;
     border-radius: 15px;
     overflow: hidden;
-    margin: 10px;
+    margin: 25px;
+    box-sizing: border-box;
     background-color: #f4f4f4;
     box-shadow: 2px 4px 8px 1px rgba(0, 0, 0, 0.6);
     position: relative;
@@ -72,14 +72,84 @@
 #lasagna-page,
 #gingerbread-man-page,
 #burger-page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f4f4f4, #dcc8a0);
     text-align: center;
+    /* 
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
     margin: 0 auto;
     max-width: 600px;
-    font-family: 'Lato', sans-serif;
+    
     letter-spacing: 1px;
     line-height: 1.5;
     margin-bottom: 25px;
-    background-color:  #f4f4f4;
+     */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #ed4224;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 100; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.lasagna-title, 
+.gingerbread-man-title,
+.burger-title,
+.lasagna-title-h2-h3,
+.gingerbread-man-h2,
+.burger-h2-h3,
+.lasagna-paragraph,
+.gingerbread-man-paragraph,
+.burger-paragraph,
+.lasagna-img,
+.gingerbread-man-img,
+.burger-img,
+.lasagna-ul-ol,
+.gingerbread-man-ul,
+.burger-ul {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .lasagna-title, 
@@ -87,7 +157,7 @@
 .burger-title {
     font-size: 3em;
     text-align: left;
-    margin-top: -25px;
+    margin-top: 80px;
     color: #ed4224;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
@@ -104,22 +174,20 @@
 .burger-paragraph {
         margin-bottom: 30px;
         text-align: left;
-        color: #777777;
+        color: #333333;
     }
 
 .lasagna-img,
 .gingerbread-man-img,
 .burger-img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 600px;
     max-height: 600px;
     border-radius: 10px;
     margin-top: -15px;
     margin-bottom: 35px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border: 2.5px solid #e7b433;
+    border: 3.5px solid #e7b433;
     border-radius: 10px;
 }
 
@@ -128,16 +196,32 @@
 .burger-ul {
     line-height: 2.5;
     text-align: left;
-    color: #777777;
+    color: #333333;
 }
 
-#home-link {
-    font-size: 23px;
-    color: #ed4224;
-    text-decoration: none;
-    margin-top: 15px;
-    margin-left: -435px;
-    font-weight: bold;
-    display: block;
-    max-width: fit-content;
+
+/* POKUŠAJ DODAVANJA LIŠĆA UZ RUBOVE STRANICE */
+#burger-page::before,
+#burger-page::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(1px);
 }
+
+ #burger-page::before {
+    left: 0;
+    background: url(./background-image/forest-leaves.png) top left/cover no-repeat fixed;
+}
+
+#burger-page::after {
+    right: 0;
+    background: url(./background-image/forest-leaves.png) top right/cover no-repeat fixed;
+    transform-origin: right top; 
+} 
