@@ -79,23 +79,12 @@
     min-height: 100vh;
     background: linear-gradient(to bottom, #f4f4f4, #dcc8a0);
     text-align: center;
-    /* 
-    margin-top: 20px;
-    padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    max-width: 600px;
-    
     letter-spacing: 1px;
     line-height: 1.5;
-    margin-bottom: 25px;
-     */
 }
 
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
