@@ -1,4 +1,4 @@
-/* HOMEPAGE STYLE */
+                    /* HOMEPAGE STYLE */
 
 #homepage {
     font-family: 'Lato', sans-serif;
@@ -63,10 +63,11 @@
     border: 3.5px solid #f15024;
     border-radius: 10px;
 }
-
- /* LASAGNA PAGE STYLE */
- /* GINGERBREAD MAN STYLE */
- /* JUICY BURGER STYLE */
+/* ------------------------------------------------------------------------------ */
+ 
+                    /* LASAGNA PAGE STYLE */
+                    /* GINGERBREAD MAN STYLE */
+                    /* JUICY BURGER STYLE */
 
  /* BODY */
 #lasagna-page,
@@ -121,29 +122,19 @@
     width: 100%;
 }
 
-.lasagna-title, 
-.gingerbread-man-title,
-.burger-title,
-.lasagna-title-h2-h3,
-.gingerbread-man-h2,
-.burger-h2-h3,
-.lasagna-paragraph,
-.gingerbread-man-paragraph,
-.burger-paragraph,
-.lasagna-img,
-.gingerbread-man-img,
-.burger-img,
-.lasagna-ul-ol,
-.gingerbread-man-ul,
-.burger-ul {
+.title,
+.h2,
+.h3,
+.paragraph,
+.img,
+.ol,
+.ul {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.lasagna-title, 
-.gingerbread-man-title,
-.burger-title {
+.title {
     font-size: 3em;
     text-align: left;
     margin-top: 0.5;
@@ -151,24 +142,19 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.lasagna-title-h2-h3,
-.gingerbread-man-h2,
-.burger-h2-h3 {
+.h2,
+.h3 {
         line-height: 1.2;
         text-align: left;
     }
 
-.lasagna-paragraph,
-.gingerbread-man-paragraph,
-.burger-paragraph {
+.paragraph {
         margin-bottom: 30px;
         text-align: left;
         color: #333333;
     }
 
-.lasagna-img,
-.gingerbread-man-img,
-.burger-img {
+.img {
     display: block;
     max-width: 600px;
     max-height: 600px;
@@ -180,9 +166,8 @@
     border-radius: 10px;
 }
 
-.lasagna-ul-ol,
-.gingerbread-man-ul,
-.burger-ul {
+.ol,
+.ul {
     line-height: 2.5;
     text-align: left;
     color: #333333;
